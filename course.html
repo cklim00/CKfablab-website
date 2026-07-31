@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Course — CKfablab</title>
+<meta name="description" content="Course detail — teaching by Prof. Chor-Kheng Lim, CKfablab, Yuan Ze University.">
+<link href="https://fonts.googleapis.com/css2?family=Questrial&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.detail-hero-img { width:100%; max-height:62vh; object-fit:cover; border:1px solid var(--ink); display:block; }
+.detail-meta { display:flex; gap:28px; flex-wrap:wrap; font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--gray); margin-top:20px; }
+.detail-body p { max-width:760px; margin-bottom:20px; font-size:16.5px; }
+.gallery { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:24px; margin-top:56px; }
+.gallery img { width:100%; border:1px solid var(--ink); display:block; }
+.fact-list { border-top:1px solid var(--ink); margin-top:8px; }
+.fact-list .row-item { grid-template-columns:120px 1fr; }
+</style>
+</head>
+<body data-lang="en">
+
+<header>
+  <div class="header-inner">
+    <a class="wordmark" href="index.html">CK<span>fablab</span></a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <nav class="main-nav">
+      <a href="research.html">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="teaching.html" class="active">Teaching</a>
+      <a href="workshops.html">Workshops</a>
+      <a href="talks.html">Talks &amp; News</a>
+      <a href="people.html">CV</a>
+      <a href="contact.html">Contact</a>
+      <button class="lang-toggle">中文</button>
+    </nav>
+  </div>
+</header>
+
+<div class="page-hero" style="padding-bottom:40px;border-bottom:none">
+  <div class="container">
+    <p class="eyebrow"><a href="teaching.html" class="link"><span class="lang-en">← Teaching</span><span class="lang-zh">← 教學總覽</span></a></p>
+    <h1 class="display" id="p-title"></h1>
+    <div class="detail-meta" id="p-meta"></div>
+  </div>
+</div>
+
+<section class="tight" style="padding-top:20px">
+  <div class="container">
+    <img id="p-hero" class="detail-hero-img" alt="" style="display:none">
+    <div class="detail-body" id="p-body" style="margin-top:48px"></div>
+    <div id="p-facts"></div>
+    <div class="gallery" id="p-gallery"></div>
+    <p style="margin-top:64px"><a class="btn" href="teaching.html"><span class="lang-en">← Back to Teaching</span><span class="lang-zh">← 回教學總覽</span></a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="wordmark">CK<span>fablab</span></div>
+        <p style="margin-top:16px;color:#ccc;font-size:14px;max-width:380px">
+          <span class="lang-en">An adaptive design lab at Yuan Ze University, Taiwan, led by Prof. Chor-Kheng Lim — where AI, computation and fabrication meet design.</span>
+          <span class="lang-zh">林楚卿教授帶領的元智大學數位構築實驗室——AI、運算與製造遇上設計之處。</span>
+        </p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="workshops.html">Workshops</a></li>
+          <li><a href="talks.html">Talks &amp; News</a></li>
+          <li><a href="people.html">CV</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:kheng@saturn.yzu.edu.tw">kheng@saturn.yzu.edu.tw</a></li>
+          <li><span class="lang-en">Dept. of Art &amp; Design, Yuan Ze University</span><span class="lang-zh">元智大學 藝術與設計學系</span></li>
+          <li><span class="lang-en">Taoyuan, Taiwan</span><span class="lang-zh">桃園，台灣</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 CKfablab</span>
+      <span><span class="lang-en">Designed &amp; vibe-coded with AI</span><span class="lang-zh">本站以 AI 協作 vibe coding 完成</span></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/courses-data.js"></script>
+<script>window.DATASET = COURSES;</script>
+<script src="js/main.js"></script>
+<script src="js/project-page.js"></script>
+</body>
+</html>

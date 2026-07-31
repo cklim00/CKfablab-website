@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Pillow Fight — Field Record — CKfablab</title>
+<meta name="description" content="Password-protected field record for the Pillow Fight project.">
+<link href="https://fonts.googleapis.com/css2?family=Questrial&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .gate-wrap { max-width:520px; margin:8vh auto; text-align:center; }
+  .gate-wrap input { font:inherit; font-size:16px; padding:12px 14px; width:100%; max-width:320px; border:1px solid var(--ink); background:#fff; margin:18px 0 14px; }
+  .gate-wrap .btn { cursor:pointer; }
+  .gate-err { color:#b00; font-size:14px; min-height:20px; margin-top:10px; }
+  .venue-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:22px; margin-top:40px; }
+  .venue-grid figure { margin:0; border:1px solid var(--ink); }
+  .venue-grid img { width:100%; height:auto; display:block; border-bottom:1px solid var(--ink); }
+  .venue-grid figcaption { padding:14px 16px; text-align:center; }
+  .venue-grid .vn { font-weight:700; font-size:15px; line-height:1.45; }
+  .venue-grid .vo { font-size:13px; color:var(--gray); margin-top:3px; }
+  .venue-grid .vd { font-size:12px; letter-spacing:.12em; color:var(--gray); margin-top:8px; }
+</style>
+</head>
+<body data-lang="en">
+
+<header>
+  <div class="header-inner">
+    <a class="wordmark" href="index.html">CK<span>fablab</span></a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <nav class="main-nav">
+      <a href="research.html">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="workshops.html">Workshops</a>
+      <a href="talks.html">Talks &amp; News</a>
+      <a href="people.html">CV</a>
+      <a href="contact.html">Contact</a>
+      <button class="lang-toggle">中文</button>
+    </nav>
+  </div>
+</header>
+
+<div class="page-hero" style="padding-bottom:30px;border-bottom:none">
+  <div class="container">
+    <p class="eyebrow"><a href="project.html?id=pillow-fight" class="link"><span class="lang-en">← Pillow Fight</span><span class="lang-zh">← 枕頭戰</span></a></p>
+    <h1 class="display"><span class="lang-en"><strong>Field Record</strong></span><span class="lang-zh"><strong>場域應用 · 照片紀錄</strong></span></h1>
+  </div>
+</div>
+
+<section class="tight" style="padding-top:10px">
+  <div class="container">
+
+    <!-- 密碼閘門 -->
+    <div id="gate" class="gate-wrap">
+      <p style="max-width:460px;margin:0 auto;color:var(--gray);font-size:15px;line-height:1.9">
+        <span class="lang-en">This page holds on-site photos from care centres, dementia units and kindergartens. To respect the privacy of the elders and children pictured, it is password-protected. Please enter the password to continue.</span>
+        <span class="lang-zh">本頁收錄枕頭戰於各長照中心、失智據點與幼兒園的實地照片。為尊重被攝長者與孩童的肖像權，設有密碼保護。請輸入密碼後瀏覽。</span>
+      </p>
+      <input id="pw" type="password" autocomplete="off" aria-label="password" placeholder="密碼 / password">
+      <br>
+      <button class="btn" id="go"><span class="lang-en">Enter</span><span class="lang-zh">進入</span></button>
+      <div class="gate-err" id="err"></div>
+    </div>
+
+    <!-- 照片相簿（驗證後顯示） -->
+    <div id="album" style="display:none">
+      <p style="max-width:760px;margin:0 0 8px;font-size:15px;color:var(--gray)">
+        <span class="lang-en">Pillow Fight travelled to elder day-care centres, dementia-care units, kindergartens and community associations across Taiwan, 2019–2020.</span>
+        <span class="lang-zh">枕頭戰於 2019–2020 年巡迴台灣各地日照中心、失智照護據點、幼兒園與社區發展協會的實地紀錄。</span>
+      </p>
+      <p style="font-size:12px;color:var(--gray);margin:0 0 6px">
+        <span class="lang-en">Please keep these images confidential and do not redistribute.</span>
+        <span class="lang-zh">請勿轉載或外流這些照片。</span>
+      </p>
+      <div class="venue-grid" id="grid"></div>
+      <p style="margin-top:56px"><a class="btn" href="project.html?id=pillow-fight"><span class="lang-en">← Back to Pillow Fight</span><span class="lang-zh">← 回枕頭戰</span></a></p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="wordmark">CK<span>fablab</span></div>
+        <p style="margin-top:16px;color:#ccc;font-size:14px;max-width:380px">
+          <span class="lang-en">An adaptive design lab at Yuan Ze University, Taiwan, led by Prof. Chor-Kheng Lim — where AI, computation and fabrication meet design.</span>
+          <span class="lang-zh">林楚卿教授帶領的元智大學數位構築實驗室——AI、運算與製造遇上設計之處。</span>
+        </p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="workshops.html">Workshops</a></li>
+          <li><a href="talks.html">Talks &amp; News</a></li>
+          <li><a href="people.html">CV</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:kheng@saturn.yzu.edu.tw">kheng@saturn.yzu.edu.tw</a></li>
+          <li><span class="lang-en">Dept. of Art &amp; Design, Yuan Ze University</span><span class="lang-zh">元智大學 藝術與設計學系</span></li>
+          <li><span class="lang-en">Taoyuan, Taiwan</span><span class="lang-zh">桃園，台灣</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 CKfablab</span>
+      <span><span class="lang-en">Designed &amp; vibe-coded with AI</span><span class="lang-zh">本站以 AI 協作 vibe coding 完成</span></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/projects-data.js"></script>
+<script src="js/main.js"></script>
+<script>
+(function () {
+  // 密碼以 SHA-256 雜湊比對（不在原始碼放明碼）；純靜態站屬軟性保護，正式上鎖建議於部署平台加密碼
+  var HASH = '1ef142c8213e887dc6812fe3147cfeada300cc161799af8d62bf1e165b1a4a6c';
+  var gate = document.getElementById('gate'), album = document.getElementById('album'),
+      pw = document.getElementById('pw'), err = document.getElementById('err');
+
+  async function sha256(s) {
+    var buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s));
+    return Array.from(new Uint8Array(buf)).map(function (b) { return b.toString(16).padStart(2, '0'); }).join('');
+  }
+
+  function renderAlbum() {
+    var data = (typeof PROJECTS !== 'undefined') ? PROJECTS : [];
+    var p = data.filter(function (x) { return x.slug === 'pillow-fight'; })[0];
+    if (!p || !p.venues) return;
+    document.getElementById('grid').innerHTML = p.venues.map(function (v) {
+      return '<figure><img src="' + v.img + '" alt="" loading="lazy">' +
+        '<figcaption><div class="vn">' + v.name + '</div>' +
+        (v.org ? '<div class="vo">' + v.org + '</div>' : '') +
+        '<div class="vd">' + v.date + '</div></figcaption></figure>';
+    }).join('');
+  }
+
+  async function tryUnlock() {
+    var h = await sha256(pw.value || '');
+    if (h === HASH) {
+      gate.style.display = 'none';
+      album.style.display = 'block';
+      renderAlbum();
+    } else {
+      err.innerHTML = '<span class="lang-en">Incorrect password.</span><span class="lang-zh">密碼不正確。</span>';
+      pw.value = '';
+    }
+  }
+
+  document.getElementById('go').addEventListener('click', tryUnlock);
+  pw.addEventListener('keydown', function (e) { if (e.key === 'Enter') tryUnlock(); });
+})();
+</script>
+</body>
+</html>

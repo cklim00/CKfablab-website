@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CKfablab — 林楚卿教授的設計實驗室 | Prof. Chor-Kheng Lim's Design Lab, Yuan Ze University</title>
+<meta name="description" content="CKfablab is an adaptive design lab at Yuan Ze University led by Prof. Chor-Kheng Lim, exploring AI-augmented design, interaction & gerontechnology, and digital fabrication.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Questrial&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+<body data-lang="en">
+
+<header>
+  <div class="header-inner">
+    <a class="wordmark" href="index.html">CK<span>fablab</span></a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <nav class="main-nav">
+      <a href="research.html">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="workshops.html">Workshops</a>
+      <a href="talks.html">Talks &amp; News</a>
+      <a href="people.html">CV</a>
+      <a href="contact.html">Contact</a>
+      <button class="lang-toggle">中文</button>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO：p5.js 生成視覺 ============ -->
+<div class="hero">
+  <div id="hero-canvas"></div>
+  <div class="hero-content">
+    <p class="eyebrow">CKfablab — Prof. Chor-Kheng Lim 林楚卿教授實驗室</p>
+    <h1 class="display">
+      <span class="lang-en">Where <strong>AI</strong>, computation<br>&amp; fabrication meet <strong>design</strong></span>
+      <span class="lang-zh">當 <strong>AI</strong>、運算與製造，<br>遇上<strong>設計</strong></span>
+    </h1>
+    <p class="lede">
+      <span class="lang-en">CKfablab is an adaptive design lab at Yuan Ze University, Taiwan, led by Prof. Chor-Kheng Lim — we build interactive systems, generative works and fabrication experiments that respond to people, objects and environments.</span>
+      <span class="lang-zh">CKfablab 是元智大學林楚卿教授帶領的適應性設計實驗室—我們打造能回應人、物件與環境的互動系統、生成創作與數位製造實驗。</span>
+    </p>
+  </div>
+</div>
+
+<!-- ============ 研究主軸 ============ -->
+<section>
+  <div class="container">
+    <p class="eyebrow"><span class="lang-en">Research Axes</span><span class="lang-zh">研究主軸</span></p>
+    <div class="section-head">
+      <h2 class="display">
+        <span class="lang-en">Three ways we make<br>design <strong>adaptive</strong></span>
+        <span class="lang-zh">三條路徑，讓設計<br>具有<strong>適應性</strong></span>
+      </h2>
+      <a class="more" href="research.html"><span class="lang-en">All Research →</span><span class="lang-zh">研究總覽 →</span></a>
+    </div>
+    <div class="axes">
+      <div class="axis">
+        <span class="num">01</span>
+        <h3><span class="lang-en"><strong>AI-Augmented</strong> Design</span><span class="lang-zh"><strong>AI 增強</strong>設計</span></h3>
+        <p>
+          <span class="lang-en">How generative AI reshapes design thinking, creative processes and design education — from prompt-based ideation to vibe coding as a design medium.</span>
+          <span class="lang-zh">生成式 AI 如何重塑設計思考、創作流程與設計教育—從提示式發想到以 vibe coding 作為設計媒材。</span>
+        </p>
+        <div class="tags"><span class="tag">Vibe Coding</span><span class="tag">Generative Art</span><span class="tag">Design Cognition</span></div>
+      </div>
+      <div class="axis">
+        <span class="num">02</span>
+        <h3><span class="lang-en"><strong>Interaction</strong> &amp; Gerontechnology</span><span class="lang-zh"><strong>互動設計</strong>與高齡科技</span></h3>
+        <p>
+          <span class="lang-en">Interactive devices and services for intergenerational care — from the commercialized Pillow Fight game to AI companions for dementia caregivers.</span>
+          <span class="lang-zh">面向代間關懷的互動裝置與服務—從商品化的「枕頭戰」到支援失智照顧者的 AI 夥伴。</span>
+        </p>
+        <div class="tags"><span class="tag">Gerontech</span><span class="tag">USR</span><span class="tag">Co-Design</span></div>
+      </div>
+      <div class="axis">
+        <span class="num">03</span>
+        <h3><span class="lang-en"><strong>Digital</strong> Fabrication</span><span class="lang-zh"><strong>數位</strong>構築</span></h3>
+        <p>
+          <span class="lang-en">Computational design and making — freeform construction, parametric fabrication and maker education, rooted in architecture and CAAD research.</span>
+          <span class="lang-zh">運算設計與製造—自由形體構築、參數化製造與 maker 教育，根植於建築與 CAAD 研究。</span>
+        </p>
+        <div class="tags"><span class="tag">CAD/CAM</span><span class="tag">Grasshopper</span><span class="tag">Maker Education</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 最新動態 ============ -->
+<section style="padding-top:0">
+  <div class="container">
+    <p class="eyebrow"><span class="lang-en">Latest</span><span class="lang-zh">最新動態</span></p>
+    <div class="section-head">
+      <h2 class="display"><span class="lang-en">What’s <strong>happening</strong></span><span class="lang-zh">最新<strong>動態</strong></span></h2>
+      <a class="more" href="talks.html"><span class="lang-en">All News →</span><span class="lang-zh">所有動態 →</span></a>
+    </div>
+    <div class="project-grid" id="latest-grid"></div>
+  </div>
+</section>
+
+<!-- ============ 獲獎榮譽 ============ -->
+<section style="padding-top:0">
+  <div class="container">
+    <p class="eyebrow"><span class="lang-en">Honors</span><span class="lang-zh">獲獎榮譽</span></p>
+    <div class="section-head">
+      <h2 class="display"><span class="lang-en">Awards &amp; <strong>honors</strong></span><span class="lang-zh">獲獎與<strong>榮譽</strong></span></h2>
+      <a class="more" href="people.html"><span class="lang-en">Full List → CV</span><span class="lang-zh">完整清單 → CV</span></a>
+    </div>
+    <div class="row-list">
+      <div class="row-item">
+        <span class="date">2026</span>
+        <span class="title"><span class="lang-en"><strong>YZU Institutional Research Award — Excellence</strong> (AY114), AI-assisted student-record prediction model</span><span class="lang-zh"><strong>114 學年度校務研究獎勵 優等</strong>—AI 輔助學籍與分組預測模型</span></span>
+        <span class="cat">YZU Award</span>
+      </div>
+      <div class="row-item">
+        <span class="date">2014・2025</span>
+        <span class="title"><span class="lang-en"><strong>YZU Faculty Award for Research Excellence ×2</strong> (AY102, AY113)</span><span class="lang-zh"><strong>元智大學研究傑出獎 ×2</strong>（102、113 學年）</span></span>
+        <span class="cat">YZU Award</span>
+      </div>
+      <div class="row-item">
+        <span class="date">2025</span>
+        <span class="title"><span class="lang-en"><strong>TSAA Taiwan Sustainability Action Award — SDG 10 Silver</strong>, “Intergenerational AI: Warm Inclusion”</span><span class="lang-zh"><strong>TSAA 台灣永續行動獎 SDG10 銀級獎</strong>—「跨代 AI：暖心共融」</span></span>
+        <span class="cat">Award</span>
+      </div>
+      <div class="row-item">
+        <span class="date">2025</span>
+        <span class="title"><span class="lang-en"><strong>Best Presentation Award, AIVR 2025</strong> (Osaka) — human-AI collaborative design cognition</span><span class="lang-zh"><strong>AIVR 2025 國際研討會最佳發表獎</strong>（大阪）—人機共創設計認知研究</span></span>
+        <span class="cat">Award</span>
+      </div>
+      <div class="row-item">
+        <span class="date">2010–2025</span>
+        <span class="title"><span class="lang-en"><strong>YZU Innovation in Teaching Award — Distinguished ×8, Excellence ×3</strong></span><span class="lang-zh"><strong>元智大學創新教學獎 特優 ×8、優等 ×3</strong></span></span>
+        <span class="cat">YZU Award</span>
+      </div>
+      <div class="row-item">
+        <span class="date">2022</span>
+        <span class="title"><span class="lang-en"><strong>ASUS Think NEXT — Bronze</strong>, “JoHouXue” interactive lesson-plan platform for elementary teachers</span><span class="lang-zh"><strong>ASUS Think NEXT 銅獎</strong>—「揪好學」國小教師教案設計互動平台</span></span>
+        <span class="cat">Award</span>
+      </div>
+      <div class="row-item">
+        <span class="date">2022</span>
+        <span class="title"><span class="lang-en"><strong>Franz Award Imagination Project</strong> — “iCulMo” tech-art education for rural elementary schools</span><span class="lang-zh"><strong>法藍瓷想像計畫</strong>—「iCulMo 想像文化怪獸」偏鄉國小科技藝術教育</span></span>
+        <span class="cat">Award</span>
+      </div>
+      <div class="row-item">
+        <span class="date">2020</span>
+        <span class="title"><span class="lang-en"><strong>NSTC FITI Entrepreneurship Potential Award</strong> — Pillow Fight</span><span class="lang-zh"><strong>科技部創新創業激勵（FITI）創業潛力獎</strong>—枕頭戰</span></span>
+        <span class="cat">Award</span>
+      </div>
+      <div class="row-item">
+        <span class="date">2019</span>
+        <span class="title"><span class="lang-en"><strong>Stanford Design Challenge — Global 3rd Place</strong>, Pillow Fight (commercialized) — <a href="project.html?id=pillow-fight">project page</a></span><span class="lang-zh"><strong>史丹佛銀髮設計競賽 全球第三名</strong>—枕頭戰（已商品化）—<a href="project.html?id=pillow-fight">專案頁</a></span></span>
+        <span class="cat">Award</span>
+      </div>
+      <div class="row-item">
+        <span class="date">2010・2019</span>
+        <span class="title"><span class="lang-en"><strong>YZU Faculty Award for Teaching Excellence ×2</strong> (AY99, AY107)</span><span class="lang-zh"><strong>元智大學教學傑出獎 ×2</strong>（99、107 學年）</span></span>
+        <span class="cat">YZU Award</span>
+      </div>
+      <div class="row-item">
+        <span class="date">2016</span>
+        <span class="title"><span class="lang-en"><strong>Vision 2025 Silver Award</strong> — Care Steps・<strong>Best Performance Award</strong>, 2nd Int’l Conference on Digital Fabrication, Tokyo</span><span class="lang-zh"><strong>Vision 2025 銀獎</strong>—「關懷步履」・國際數位製造研討會<strong>最佳表現獎</strong>（東京）</span></span>
+        <span class="cat">Award</span>
+      </div>
+      <div class="row-item">
+        <span class="date">2010</span>
+        <span class="title"><span class="lang-en"><strong>NSC Forward-Looking Design — Best Design of the Year</strong></span><span class="lang-zh"><strong>科技部前瞻設計 年度最佳設計作品獎</strong></span></span>
+        <span class="cat">Award</span>
+      </div>
+      <div class="row-item">
+        <span class="date">2004・2006</span>
+        <span class="title"><span class="lang-en"><strong>Young CAADRIA Award ×2</strong> — int’l computer-aided architectural design research community</span><span class="lang-zh"><strong>Young CAADRIA Award ×2</strong>—亞洲電腦輔助建築設計國際學術社群</span></span>
+        <span class="cat">Award</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 數字 ============ -->
+<section class="dark">
+  <div class="container">
+    <p class="eyebrow"><span class="lang-en">Track Record</span><span class="lang-zh">實績</span></p>
+    <div class="stats">
+      <div class="stat"><div class="n">18+</div><div class="label"><span class="lang-en">Years of design education at YZU</span><span class="lang-zh">年元智設計教育</span></div></div>
+      <div class="stat"><div class="n">10+</div><div class="label"><span class="lang-en">Innovation in Teaching Awards</span><span class="lang-zh">次校級創新教學獎</span></div></div>
+      <div class="stat"><div class="n">750+</div><div class="label"><span class="lang-en">MOOC learners — Taiwan's first maker MOOC</span><span class="lang-zh">位 MOOCs 學員，全台第一門 maker 線上課</span></div></div>
+      <div class="stat"><div class="n">30+</div><div class="label"><span class="lang-en">Awards &amp; honors, incl. Stanford Design Challenge Global Bronze</span><span class="lang-zh">項獲獎與榮譽，含史丹佛銀髮設計競賽全球銅獎</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="dark tight">
+  <div class="container">
+    <p class="eyebrow"><span class="lang-en">Join Us</span><span class="lang-zh">加入我們</span></p>
+    <h2 class="display">
+      <span class="lang-en">Design with AI<br><strong>Make it real</strong></span>
+      <span class="lang-zh">與 AI 一起設計<br><strong>把想像做出來</strong></span>
+    </h2>
+    <p class="lede">
+      <span class="lang-en">We welcome students and collaborators passionate about AI-augmented design, interactive technology and making.</span>
+      <span class="lang-zh">歡迎對 AI 設計、互動科技與自造有熱情的學生與合作夥伴。</span>
+    </p>
+    <a class="btn" href="contact.html"><span class="lang-en">Get in Touch</span><span class="lang-zh">聯絡我們</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="wordmark">CK<span>fablab</span></div>
+        <p style="margin-top:16px;color:#ccc;font-size:14px;max-width:380px">
+          <span class="lang-en">An adaptive design lab at Yuan Ze University, Taiwan, led by Prof. Chor-Kheng Lim — where AI, computation and fabrication meet design.</span>
+          <span class="lang-zh">林楚卿教授帶領的元智大學數位構築實驗室—AI、運算與製造遇上設計之處。</span>
+        </p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="workshops.html">Workshops</a></li>
+          <li><a href="talks.html">Talks &amp; News</a></li>
+          <li><a href="people.html">CV</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:kheng@saturn.yzu.edu.tw">kheng@saturn.yzu.edu.tw</a></li>
+          <li><span class="lang-en">Dept. of Art &amp; Design, Yuan Ze University</span><span class="lang-zh">元智大學 藝術與設計學系</span></li>
+          <li><span class="lang-en">Taoyuan, Taiwan</span><span class="lang-zh">桃園，台灣</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 CKfablab</span>
+      <span><span class="lang-en">Designed &amp; vibe-coded with AI</span><span class="lang-zh">本站以 AI 協作 vibe coding 完成</span></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/projects-data.js"></script>
+<script src="js/latest-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/hero.js"></script>
+</body>
+</html>

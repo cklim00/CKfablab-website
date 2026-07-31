@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pillow Fight — The Story Behind — CKfablab</title>
+<meta name="description" content="The story behind Pillow Fight — a work Prof. Chor-Kheng Lim created in memory of her mother.">
+<link href="https://fonts.googleapis.com/css2?family=Questrial&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .story-body p { max-width:760px; }
+</style>
+</head>
+<body data-lang="en">
+
+<header>
+  <div class="header-inner">
+    <a class="wordmark" href="index.html">CK<span>fablab</span></a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <nav class="main-nav">
+      <a href="research.html">Research</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="workshops.html">Workshops</a>
+      <a href="talks.html">Talks &amp; News</a>
+      <a href="people.html">CV</a>
+      <a href="contact.html">Contact</a>
+      <button class="lang-toggle">中文</button>
+    </nav>
+  </div>
+</header>
+
+<div class="page-hero" style="padding-bottom:30px;border-bottom:none">
+  <div class="container">
+    <p class="eyebrow"><a href="project.html?id=pillow-fight" class="link"><span class="lang-en">← Pillow Fight</span><span class="lang-zh">← 枕頭戰</span></a></p>
+    <h1 class="display"><span class="lang-en"><strong>The Story Behind</strong></span><span class="lang-zh"><strong>品牌故事</strong></span></h1>
+  </div>
+</div>
+
+<section class="tight" style="padding-top:20px">
+  <div class="container">
+    <div class="story-body" id="brand-body" style="margin-top:20px"></div>
+    <p style="margin-top:64px"><a class="btn" href="project.html?id=pillow-fight"><span class="lang-en">← Back to Pillow Fight</span><span class="lang-zh">← 回枕頭戰</span></a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="wordmark">CK<span>fablab</span></div>
+        <p style="margin-top:16px;color:#ccc;font-size:14px;max-width:380px">
+          <span class="lang-en">An adaptive design lab at Yuan Ze University, Taiwan, led by Prof. Chor-Kheng Lim — where AI, computation and fabrication meet design.</span>
+          <span class="lang-zh">林楚卿教授帶領的元智大學數位構築實驗室——AI、運算與製造遇上設計之處。</span>
+        </p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="workshops.html">Workshops</a></li>
+          <li><a href="talks.html">Talks &amp; News</a></li>
+          <li><a href="people.html">CV</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:kheng@saturn.yzu.edu.tw">kheng@saturn.yzu.edu.tw</a></li>
+          <li><span class="lang-en">Dept. of Art &amp; Design, Yuan Ze University</span><span class="lang-zh">元智大學 藝術與設計學系</span></li>
+          <li><span class="lang-en">Taoyuan, Taiwan</span><span class="lang-zh">桃園，台灣</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 CKfablab</span>
+      <span><span class="lang-en">Designed &amp; vibe-coded with AI</span><span class="lang-zh">本站以 AI 協作 vibe coding 完成</span></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/projects-data.js"></script>
+<script src="js/main.js"></script>
+<script>
+(function () {
+  var data = (typeof PROJECTS !== 'undefined') ? PROJECTS : [];
+  var p = data.filter(function (x) { return x.slug === 'pillow-fight'; })[0];
+  if (!p || !p.brand) return;
+  document.title = '品牌故事 · 枕頭戰 — CKfablab';
+  var title = p.title_zh || '';
+  function block(b) {
+    if (b.t === 'h')    return '<h2 style="font-weight:700;font-size:23px;letter-spacing:.02em;margin:52px 0 6px"><span class="lang-en">' + b.en + '</span><span class="lang-zh">▌' + b.zh + '</span></h2>';
+    if (b.t === 'sub')  return '<p style="font-size:19px;font-weight:700;margin:4px 0 18px"><span class="lang-en">' + b.en + '</span><span class="lang-zh">' + b.zh + '</span></p>';
+    if (b.t === 'p')    return '<p style="max-width:760px;margin:16px 0;font-size:16.5px;line-height:1.9"><span class="lang-en">' + b.en + '</span><span class="lang-zh">' + b.zh + '</span></p>';
+    if (b.t === 'img')  return '<img src="' + b.src + '" alt="' + title + '" loading="lazy" style="display:block;width:100%;max-width:760px;margin:24px 0;border:1px solid var(--ink)">';
+    return '';
+  }
+  document.getElementById('brand-body').innerHTML = p.brand.map(block).join('');
+})();
+</script>
+</body>
+</html>

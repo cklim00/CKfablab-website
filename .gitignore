@@ -1,0 +1,14 @@
+# 工作素材（原始檔，不上線）
+_素材/
+
+# 不對外公開的檔案（保留在本機）
+assets/talks/tsaa-award-2025.pdf
+
+# 原始檔工作副本
+林楚卿_(1).jpg
+林楚卿_個人簡歷_Draft6.pdf
+
+# 系統檔
+Thumbs.db
+desktop.ini
+.DS_Store
