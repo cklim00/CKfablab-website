@@ -9,6 +9,26 @@
 
 const LATEST = [
   {
+    date: '2026.08.02',
+    cat_en: 'Exhibition', cat_zh: '展覽',
+    title_en: 'Intergenerational Play Hackathon — Outcomes Exhibition',
+    title_zh: '黑客松共創跨代童玩成果展 開展',
+    desc_en: 'Outcomes of the USR “Intergenerational Smart Co-Creation” hackathon on show — parents’ childhood play memories × children’s imagination × AI: spoken memories became prompts for family-exclusive web games, kids’ doodles turned into 3D-printed characters, and Vibe Coding made every work playable by touch, shake and light. 8/2–8/8, 10:00–16:00, YZU Art Center (Building 3, 1F), free admission.',
+    desc_zh: 'USR「跨代智慧共創」黑客松成果正式開展—爸媽的童年記憶 × 孩子的想像 × AI：口述記憶寫成提示詞、生成專屬自家的網頁遊戲，手繪塗鴉轉成 3D 列印公仔，再以 Vibe Coding 讓每件作品都能觸摸、搖晃、遮光互動。展期 8/2–8/8 每日 10:00–16:00，元智大學三館 1 樓藝術中心展示空間，免費參觀',
+    image: 'assets/projects/hackathon-expo.jpg',
+    link: 'talks.html'
+  },
+  {
+    date: '2026.07.20',
+    cat_en: 'Workshop', cat_zh: '工作坊',
+    title_en: '“AI × Creative Design: From Imagination to Reality” — Confucian Private Secondary School, Kuala Lumpur',
+    title_zh: '馬來西亞尊孔獨中「AI × 創意設計：從想像到實體」工作營',
+    desc_en: 'Invited three-day workshop (7/20–22) at Kuala Lumpur’s century-old Confucian Private Secondary School (est. 1906): 74 art-and-design students across three grades completed the full pipeline — AI ideation → image generation → 3D modeling → 3D-printed lamp → marketing poster — with 100% completion; the p5.js AI-collaborative coding unit produced 51 interactive works, plus a teacher-development session on AI in art & design education.',
+    desc_zh: '受邀赴吉隆坡百年華校尊孔獨立中學（1906 年創校）主持三天工作營（7/20–22）—高一、高二、高三美設班共 74 位學生走完 AI 創意發想→圖像生成→3D 建模→3D 列印燈具→行銷海報的完整設計流程，作品 100% 完成繳交；p5.js「AI 協作程式創作」單元三天產出 51 件互動作品，並辦理「AI 時代的藝術設計教育」教師研習專場',
+    image: 'assets/projects/zunkong-workshop.jpg',
+    link: 'workshops.html'
+  },
+  {
     date: '2026.07.12',
     cat_en: 'Talk', cat_zh: '演講',
     title_en: 'Keynote at Taiwan Int’l AI Design Expo',
@@ -23,8 +43,8 @@ const LATEST = [
     cat_en: 'USR Event', cat_zh: 'USR 活動',
     title_en: 'Intergenerational Play Hackathon',
     title_zh: '跨代童玩 Hackathon',
-    desc_en: 'Planned and led under the MOE 4th-phase USR seed project “Intergenerational Smart Co-Creation” (PI): 12 families competed for five awards, creating 13 playful works linking the physical world to digital interfaces — designing games with AI, messaging through six kinds of sensors, AI-generated and 3D-printed characters. Outcomes to be exhibited at the YZU Art Center. Click to watch the 2-minute video.',
-    desc_zh: '教育部第四期（114–116 年）USR 萌芽計畫「跨代智慧共創：設計思考引領科技與幸福」（主持人）規劃執行—12 個家庭組隊 PK 五大獎項，完成 13 種從實體連結數位介面的創意童玩：用 AI 設計遊戲、6 種感測器傳訊息、AI 生成＋3D 列印遊戲角色、實虛互動裝置。成果將於藝術中心展出。點擊觀看 2 分鐘影片。',
+    desc_en: 'Planned and led under the MOE 4th-phase USR seed project “Intergenerational Smart Co-Creation” (PI): 12 families competed for five awards, creating 13 playful works linking the physical world to digital interfaces — designing games with AI, messaging through six kinds of sensors, AI-generated and 3D-printed characters. Outcomes exhibited at the YZU Art Center (8/2–8/8). Click to watch the 2-minute video.',
+    desc_zh: '教育部第四期（114–116 年）USR 萌芽計畫「跨代智慧共創：設計思考引領科技與幸福」（主持人）規劃執行—12 個家庭組隊 PK 五大獎項，完成 13 種從實體連結數位介面的創意童玩：用 AI 設計遊戲、6 種感測器傳訊息、AI 生成＋3D 列印遊戲角色、實虛互動裝置。成果於元智藝術中心展出（8/2–8/8）。點擊觀看 2 分鐘影片。',
     image: 'assets/projects/hackathon.jpg',
     link: 'assets/media/hackathon-2026.mp4'
   },

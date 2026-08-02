@@ -21,8 +21,8 @@ const PROJECTS = [
     category: 'interact',
     featured: true,
     image: 'assets/projects/hackathon.jpg',
-    desc_en: 'Grandparent-grandchild play × AI × web games × physical sensing — planned and led under the MOE 4th-phase USR seed project “Intergenerational Smart Co-Creation” (PI). 12 families, five awards, 13 playful works linking physical and digital: AI-designed games, six kinds of sensors, AI-generated 3D-printed characters. Outcomes to be exhibited at the YZU Art Center. Click to watch the video.',
-    desc_zh: '祖孫共玩 × AI × 網頁遊戲 × 實體感測—教育部第四期 USR 萌芽計畫「跨代智慧共創」（主持人）規劃執行。12 個家庭 PK 五大獎項，完成 13 種實虛連結的創意童玩：AI 設計遊戲、6 種感測器、AI 生成＋3D 列印角色。成果將於藝術中心展出。點擊觀看活動影片。',
+    desc_en: 'Grandparent-grandchild play × AI × web games × physical sensing — planned and led under the MOE 4th-phase USR seed project “Intergenerational Smart Co-Creation” (PI). 12 families, five awards, 13 playful works linking physical and digital: AI-designed games, six kinds of sensors, AI-generated 3D-printed characters. Outcomes exhibited at the YZU Art Center (8/2–8/8). Click to watch the video.',
+    desc_zh: '祖孫共玩 × AI × 網頁遊戲 × 實體感測—教育部第四期 USR 萌芽計畫「跨代智慧共創」（主持人）規劃執行。12 個家庭 PK 五大獎項，完成 13 種實虛連結的創意童玩：AI 設計遊戲、6 種感測器、AI 生成＋3D 列印角色。成果於元智藝術中心展出（8/2–8/8）。點擊觀看活動影片。',
     link: 'assets/media/hackathon-2026.mp4'
   },
   {
