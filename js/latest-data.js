@@ -23,8 +23,8 @@ const LATEST = [
     cat_en: 'USR Event', cat_zh: 'USR 活動',
     title_en: 'Intergenerational Play Hackathon',
     title_zh: '跨代童玩 Hackathon',
-    desc_en: 'Planned and led under the MOE 4th-phase USR seed project “Intergenerational Smart Co-Creation” (PI): 12 families competed for five awards, creating 11 playful works linking the physical world to digital interfaces — designing games with AI, messaging through six kinds of sensors, AI-generated and 3D-printed characters. Outcomes to be exhibited at the YZU Art Center. Click to watch the 2-minute video.',
-    desc_zh: '教育部第四期（114–116 年）USR 萌芽計畫「跨代智慧共創：設計思考引領科技與幸福」（主持人）規劃執行—12 個家庭組隊 PK 五大獎項，完成 11 種從實體連結數位介面的創意童玩：用 AI 設計遊戲、6 種感測器傳訊息、AI 生成＋3D 列印遊戲角色、實虛互動裝置。成果將於藝術中心展出。點擊觀看 2 分鐘影片。',
+    desc_en: 'Planned and led under the MOE 4th-phase USR seed project “Intergenerational Smart Co-Creation” (PI): 12 families competed for five awards, creating 13 playful works linking the physical world to digital interfaces — designing games with AI, messaging through six kinds of sensors, AI-generated and 3D-printed characters. Outcomes to be exhibited at the YZU Art Center. Click to watch the 2-minute video.',
+    desc_zh: '教育部第四期（114–116 年）USR 萌芽計畫「跨代智慧共創：設計思考引領科技與幸福」（主持人）規劃執行—12 個家庭組隊 PK 五大獎項，完成 13 種從實體連結數位介面的創意童玩：用 AI 設計遊戲、6 種感測器傳訊息、AI 生成＋3D 列印遊戲角色、實虛互動裝置。成果將於藝術中心展出。點擊觀看 2 分鐘影片。',
     image: 'assets/projects/hackathon.jpg',
     link: 'assets/media/hackathon-2026.mp4'
   },
