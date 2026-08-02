@@ -13,8 +13,8 @@ const LATEST = [
     cat_en: 'Exhibition', cat_zh: '展覽',
     title_en: 'Intergenerational Play Hackathon — Outcomes Exhibition',
     title_zh: '黑客松共創跨代童玩成果展 開展',
-    desc_en: 'Outcomes of the USR “Intergenerational Smart Co-Creation” hackathon on show — parents’ childhood play memories × children’s imagination × AI: spoken memories became prompts for family-exclusive web games, kids’ doodles turned into 3D-printed characters, and Vibe Coding made every work playable by touch, shake and light. 8/2–8/8, 10:00–16:00, YZU Art Center (Building 3, 1F), free admission.',
-    desc_zh: 'USR「跨代智慧共創」黑客松成果正式開展—爸媽的童年記憶 × 孩子的想像 × AI：口述記憶寫成提示詞、生成專屬自家的網頁遊戲，手繪塗鴉轉成 3D 列印公仔，再以 Vibe Coding 讓每件作品都能觸摸、搖晃、遮光互動。展期 8/2–8/8 每日 10:00–16:00，元智大學三館 1 樓藝術中心展示空間，免費參觀',
+    desc_en: 'Outcomes of the USR “Intergenerational Smart Co-Creation” hackathon on show — parents’ childhood play memories × children’s imagination × AI: spoken memories became prompts for family-exclusive web games, children’s imagination turned into 3D-printed characters, and Vibe Coding made every work playable by touch, shake and light. 8/2–8/8, 10:00–16:00, YZU Art Center (Building 3, 1F), free admission.',
+    desc_zh: 'USR「跨代智慧共創」黑客松成果正式開展—爸媽的童年記憶 × 孩子的想像 × AI：口述記憶寫成提示詞、生成專屬自家的網頁遊戲，孩童想像力轉成 3D 列印公仔，再以 Vibe Coding 讓每件作品都能觸摸、搖晃、遮光互動。展期 8/2–8/8 每日 10:00–16:00，元智大學三館 1 樓藝術中心展示空間，免費參觀。',
     image: 'assets/projects/hackathon-expo.jpg',
     link: 'talks.html'
   },
